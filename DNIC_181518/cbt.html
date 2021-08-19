@@ -25,6 +25,9 @@
               </li>
               
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <button id="logout" style="margin-right: 50px;">Log out</button>
+            </ul>
           </div>
       </nav>
     <h1 style="position:absolute;top: 30%; left: 15%;">CBT Exercises</h1>
@@ -81,6 +84,9 @@
         var property= document.getElementById("done2");
         property.style.backgroundColor = "#198754";
       }
+      document.getElementById("logout").onclick= function(){
+         location.href = "login.html";
+       }
     </script>
   </div>
 </body>

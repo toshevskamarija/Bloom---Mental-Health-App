@@ -25,6 +25,9 @@
               </li>
               
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <button id="logout" style="margin-right: 50px;">Log out</button>
+            </ul>
           </div>
       </nav>
       <h2 style="position:absolute;top: 30%; left: 15%;">Hi <span id="result"> </span>!</h2>
@@ -38,6 +41,9 @@
             location.href= "personaljournal.html";
             
         }
+        document.getElementById("logout").onclick= function(){
+         location.href = "login.html";
+       }
    </script>
 </body>
 </html>

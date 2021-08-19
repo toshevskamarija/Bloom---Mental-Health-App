@@ -25,6 +25,9 @@
               </li>
               
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <button id="logout" style="margin-right: 50px;">Log out</button>
+            </ul>
           </div>
       </nav>
     <h2 style="position:absolute;top: 30%; left: 15%;">Focus</h2>
@@ -32,6 +35,9 @@
     <h4 style="position:absolute;top: 55%; left: 5%;">Meditations: &emsp;<a href="meditation.html"> <img src="firstflower.png"width="60" height="60"></a> &emsp;<a href="meditation.html"> <img src="second.jpg"width="60" height="60"></a>  &emsp;<a href="meditation.html"> <img src="third.jpg"width="60" height="60"></a></h4>
     <script>
          document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+         document.getElementById("logout").onclick= function(){
+         location.href = "login.html";
+       }
     </script>
 </body>
 </html>
